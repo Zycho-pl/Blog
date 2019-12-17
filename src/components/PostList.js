@@ -30,9 +30,9 @@ class PostList extends Component {
     return <div className="ui relaxed divided list">{this.renderList()}</div>;
   }
 }
-
+// zawsze mapStateToProps ze "state" as argument
 const mapStateToProps = state => {
-  return { posts: state.posts };
+  return { posts: state.posts }; //posts value z reductora
 };
-
+// zawsze connect z 1. arg:mapStateToProps i 2. nazwa componentu w którym jest
 export default connect(mapStateToProps, { fetchPostsAndUsers })(PostList);

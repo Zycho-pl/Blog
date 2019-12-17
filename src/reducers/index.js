@@ -6,3 +6,4 @@ export default combineReducers({
   posts: postReducer,
   users: usersReducer
 });
+// replaceMe: () => 'temp reducer like'

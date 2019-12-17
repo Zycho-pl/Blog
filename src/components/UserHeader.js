@@ -11,7 +11,7 @@ class UserHeader extends Component {
     return <div className="header">{user.name}</div>;
   }
 }
-
+// ownProps - przekazujemy tylko potrzebne dane, nie all
 const mapStateToProps = (state, ownProps) => {
   return { user: state.users.find(user => user.id === ownProps.userId) };
 };
